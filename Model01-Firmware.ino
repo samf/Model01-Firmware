@@ -60,6 +60,18 @@
 // Support for shared palettes for other plugins, like Colormap below
 #include "Kaleidoscope-LED-Palette-Theme.h"
 
+// Plugin: DigitalRain https://github.com/tremby/Kaleidoscope-LEDEffect-DigitalRain.git
+#include <Kaleidoscope-LEDEffect-DigitalRain.h>
+
+// Plugin: Wavepool https://github.com/ToyKeeper/Kaleidoscope-LED-Wavepool.git
+#include <Kaleidoscope-LED-Wavepool.h>
+
+// Plugin: Fire https://github.com/kevinr/Kaleidoscope-LED-Fire.git
+#include <Kaleidoscope-LED-Fire.h>
+
+// Plugin: xmas https://github.com/avonderluft/Kaleidoscope-LED-ChristmasLights.git
+#include <Kaleidoscope-LED-ChristmasLights.h>
+
 // Support for an LED mode that lets one configure per-layer color maps
 #include "Kaleidoscope-Colormap.h"
 
@@ -473,17 +485,21 @@ KALEIDOSCOPE_INIT_PLUGINS(
   LEDChaseEffect,
 
   // These static effects turn your keyboard's LEDs a variety of colors
-  solidRed, solidOrange, solidYellow, solidGreen, solidBlue, solidIndigo, solidViolet,
+  // solidRed, solidOrange, solidYellow, solidGreen, solidBlue, solidIndigo, solidViolet,
+  solidRed, solidYellow, solidViolet,
 
   // The breathe effect slowly pulses all of the LEDs on your keyboard
   LEDBreatheEffect,
 
   // The AlphaSquare effect prints each character you type, using your
   // keyboard's LEDs as a display
-  AlphaSquareEffect,
+  //AlphaSquareEffect,
 
   // The stalker effect lights up the keys you've pressed recently
   StalkerEffect,
+
+  // Third party plugins
+  LEDDigitalRainEffect, WavepoolEffect, FireEffect, LEDChristmasLights,
 
   // The LED Palette Theme plugin provides a shared palette for other plugins,
   // like Colormap below
