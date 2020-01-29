@@ -66,7 +66,7 @@
 // Plugin: Wavepool https://github.com/ToyKeeper/Kaleidoscope-LED-Wavepool.git
 #include <Kaleidoscope-LED-Wavepool.h>
 
-// Plugin: Fire https://github.com/kevinr/Kaleidoscope-LED-Fire.git
+// Plugin: Fire https://github.com/kevinr/Kaleidoscope-LED-Fire.git (forked)
 #include <Kaleidoscope-LED-Fire.h>
 
 // Plugin: xmas https://github.com/avonderluft/Kaleidoscope-LED-ChristmasLights.git
@@ -275,7 +275,7 @@ KEYMAPS(
    ___),
 
   [FUNCTION] =  KEYMAP_STACKED
-  (___,      Key_F1,           Key_F2,      Key_F3,     Key_F4,        Key_F5,           Key_CapsLock,
+  (___,      Key_F1,           Key_F2,      Key_F3,     Key_F4,        Key_F5,           Key_Power,
    Key_Tab,  ___,              Key_mouseUp, ___,        Key_mouseBtnR, Key_mouseWarpEnd, Key_mouseWarpNE,
    Key_Home, Key_mouseL,       Key_mouseDn, Key_mouseR, Key_mouseBtnL, Key_mouseWarpNW,
    Key_End,  Key_PrintScreen,  Key_Insert,  Key_LeftArrow, Key_RightArrow, Key_mouseWarpSW,  Key_mouseWarpSE,
