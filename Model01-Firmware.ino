@@ -154,7 +154,7 @@ enum { MACRO_VERSION_INFO,
   *
   */
 
-enum { PRIMARY, NUMPAD, FUNCTION }; // layers
+enum { PRIMARY, NUMPAD, FUNCTION, DOUBLED }; // layers
 
 
 /**
@@ -282,11 +282,26 @@ KEYMAPS(
    ___, Key_Delete, ___, ___,
    ___,
 
-   Consumer_ScanPreviousTrack, Key_F6,                 Key_F7,                   Key_F8,                   Key_F9,          Key_F10,          Key_F11,
+   LockLayer(DOUBLED),         Key_F6,                 Key_F7,                   Key_F8,                   Key_F9,          Key_F10,          Key_F11,
    Consumer_PlaySlashPause,    Consumer_ScanNextTrack, Key_LeftCurlyBracket,     Key_RightCurlyBracket,    Key_LeftBracket, Key_RightBracket, Key_F12,
                                Key_LeftArrow,          Key_DownArrow,            Key_UpArrow,              Key_RightArrow,  ___,              ___,
    Key_PcApplication,          Consumer_Mute,          Key_UpArrow, Key_DownArrow, ___,             Key_Backslash,    Key_Pipe,
    ___, ___, Key_Enter, ___,
+   ___),
+
+  [DOUBLED] = KEYMAP_STACKED
+  (___, ___,   ___,   ___,   ___,   ___,   ___,
+   ___, Key_Q, Key_W, Key_E, Key_R, Key_T, ___,
+   ___, Key_A, Key_S, Key_D, Key_F, Key_G,
+   ___, Key_Z, Key_X, Key_C, Key_V, Key_B, ___,
+   ___, ___, ___, ___,
+   ___,
+
+   ___,   ___,   ___,   ___,       ___,           ___,        ___,
+   ___,   Key_Y, Key_U, Key_I,     Key_O,         Key_P,     Key_Equals,
+   Key_H, Key_J, Key_K, Key_L,     Key_Semicolon, Key_Quote,
+   ___,   Key_N, Key_M, Key_Comma, Key_Period,    Key_Slash, Key_Minus,
+   ___, ___, ___, ___,
    ___)
 ) // KEYMAPS(
 
